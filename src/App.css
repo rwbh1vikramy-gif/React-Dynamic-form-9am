@@ -1,0 +1,151 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f7f3ff, #eefbf7);
+  color: #333;
+}
+
+/* Section */
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+/* Header */
+.section header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.section header p {
+  max-width: 750px;
+  margin: auto;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Cards Container */
+.box1 {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.box {
+  background: #fff;
+  width: 320px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(135deg, #e3aff0, #b6f0df);
+  opacity: 0.08;
+  transform: rotate(25deg);
+}
+
+.box:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.15);
+}
+
+/* Plan Title */
+.box h1:first-child {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Features */
+.box ul {
+  list-style: none;
+  margin: 25px 0;
+}
+
+.box ul li {
+  padding: 10px 0;
+  font-size: 15px;
+  color: #555;
+  border-bottom: 1px solid #eee;
+}
+
+.box ul li:last-child {
+  border-bottom: none;
+}
+
+/* Price */
+.box h1:nth-of-type(2) {
+  font-size: 42px;
+  margin: 25px 0;
+  color: #222;
+}
+
+.box h1:nth-of-type(2)::before {
+  content: "$";
+  font-size: 22px;
+  vertical-align: top;
+  margin-right: 3px;
+  color: #888;
+}
+
+/* Button */
+.box button {
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.box button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Highlight Middle Plan */
+.box:nth-child(2) {
+  border: 2px solid #e3aff0;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section header h1 {
+    font-size: 32px;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 350px;
+  }
+}
