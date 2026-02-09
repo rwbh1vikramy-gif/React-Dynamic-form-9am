@@ -15,11 +15,14 @@ setuser({...user, [name]:value})
 }
 let {setflag,flag}=props
 function handlesubmit(e){
+
 e.preventDefault()
 console.log(user)
 
 setflag(!flag)
 }
+
+
 
     return (
 
