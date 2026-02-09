@@ -1,6 +1,6 @@
-export async function add (api){
-let data=await fetch (api)
 
+export async function add (a,b){
+let data=a+b
 return data
 }
 

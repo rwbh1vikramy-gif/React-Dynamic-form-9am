@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react"
+import { add } from "./rites"
 
 export function Childcomponent(props){
 let [user,setuser]=useState({name:"",email:"", number:""})
 console.log(props)
-
+let c= add(10,60) 
+console.log("custom hook value", c)
 useEffect(()=>{
 setuser({...user, ...props})
-
 },[])
 
 function handlechange(e){

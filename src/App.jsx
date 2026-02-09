@@ -1,6 +1,7 @@
 import { ControlForm } from "./Components/controllForm"
 // import { Parents } from "./Components/Parents"
 import { UncontrolForm } from "./Components/UncontrolForm"
+import { Datashow } from "./Customhooks/datashow"
 import { Paranets } from "./DynamicFormComponents/Paraents"
 
 
@@ -12,7 +13,8 @@ function App() {
      {/* <Parents/> */}
      {/* <UncontrolForm/> */}
      {/* <ControlForm/> */}
-     <Paranets/>
+     {/* <Paranets/> */}
+     <Datashow/>
     </>
   )
 }
